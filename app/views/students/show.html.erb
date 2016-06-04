@@ -1,3 +1,4 @@
+<%= render 'header'%>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -15,5 +16,11 @@
   <%= @student.weight %>
 </p>
 
+<p>
+  <strong>Color:</strong>
+  <%= @student.color %>
+</p>
+
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
+<%=render 'footer'%>

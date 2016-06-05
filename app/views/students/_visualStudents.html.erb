@@ -1,8 +1,12 @@
 <div id="studentDisplay">
   <% @students.each do |student| %>
-      <div class="studentBox" style="padding-top:<%=student.height %>px;padding-left:<%=student.weight %>px;padding-right:none;padding-bottom:none;color:<%=student.color %>;border:2px solid <%=student.color%>;" onlick="displayFav(<%=student.fav%>)">
+    <div class="studentBox">
+      <div  style="padding-top:<%=Integer(student.height)/2 %>px;padding-bottom:<%=Integer(student.height)/2 %>px;padding-left:<%=Integer(student.weight)/2 %>px;padding-right:<%=Integer(student.weight)/2 %>px;color:<%=student.color %>;border:2px solid <%=student.color%>;" onmouseover="displayFav('<%=student.fav%>', <%=student.id%>, 0)" onmouseout="displayFav('<%=student.fav%>', <%=student.id%>, 1)">
         <%= student.name %><br>
         <%= student.gpa %>
       </div>
+      <span class="favInfo" id='<%= student.id%>'></span>
+    </div>
   <% end %>
+  
 </div>

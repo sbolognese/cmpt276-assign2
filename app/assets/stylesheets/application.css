@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+body{
+  position:absolute;
+}
+#wrapper{
+
+}
+#tablePortion{
+  width:50%;
+  float:left;
+}
+.studentBox{
+  float:right;
+  margin:1em;
+}
+.favInfo{
+  z-index:-1;
+  position:relative;
+  min-height:1em;
+}

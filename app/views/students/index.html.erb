@@ -1,8 +1,7 @@
 <%= render 'header'%>
+<div id=tablePortion>
 <p id="notice"><%= notice %></p>
-
 <h1>Listing Students</h1>
-
 <table>
   <thead>
     <tr>
@@ -36,5 +35,7 @@
 <br>
 
 <%= link_to 'New Student', new_student_path %>
+</div>
 <%= render 'visualStudents' =%>
+<script src="studentScript.js"></script>
 <%=render 'footer'%>

@@ -10,6 +10,8 @@
       <th>Height</th>
       <th>Weight</th>
       <th>Color</th>
+      <th>GPA</th>
+      <th>Favourite Thing</th>
       <th colspan="4"></th>
     </tr>
   </thead>
@@ -21,6 +23,8 @@
         <td><%= student.height %></td>
         <td><%= student.weight %></td>
         <td><%= student.color %></td>
+        <td><%= student.gpa %></td>
+        <td><%= student.fav %></td>
         <td><%= link_to 'Show', student %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -5,6 +5,8 @@ class CreateStudents < ActiveRecord::Migration
       t.string :height
       t.string :weight
       t.string :color
+      t.string :gpa
+      t.string :fav
 
       t.timestamps null: false
     end

@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20160604071129) do
     t.string   "height"
     t.string   "weight"
     t.string   "color"
+    t.string   "gpa"
+    t.string   "fav"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

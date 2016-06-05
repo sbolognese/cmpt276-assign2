@@ -1,8 +1,8 @@
 <div id="studentDisplay">
   <% @students.each do |student| %>
-      <div class="studentBox" style="padding-top:<%=student.height=%>px;padding-left:<%=student.weight=%>px;padding-right:none;padding-bottom:none;color:<%=student.color=%>;border:2px solid <%=student.color=%>;">
-        <%= student.name %>
-
+      <div class="studentBox" style="padding-top:<%=student.height %>px;padding-left:<%=student.weight %>px;padding-right:none;padding-bottom:none;color:<%=student.color %>;border:2px solid <%=student.color%>;" onlick="displayFav(<%=student.fav%>)">
+        <%= student.name %><br>
+        <%= student.gpa %>
       </div>
   <% end %>
 </div>

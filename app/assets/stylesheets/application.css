@@ -17,10 +17,9 @@ body{
   position:absolute;
 }
 #wrapper{
-
+ width:90%
 }
 #tablePortion{
-  width:50%;
   float:left;
 }
 .studentBox{

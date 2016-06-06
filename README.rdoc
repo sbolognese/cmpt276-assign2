@@ -68,3 +68,9 @@ Styling:
     breaking or overlapping with different window size
   -student boxes have their height/weight added onto 50px, so that a student
     with height 1 isn't too small to see
+
+Highlighting GPA:
+  -clicking the button highlights visual students who have GPAs that match the
+    requirements (can be used to point out students who might need help or who
+    could be candidates for scholarships)
+  -clicking clear will return the visual students back to normal

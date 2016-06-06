@@ -1,28 +1,70 @@
-== README
+==README==
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---How to use---
+Adding a new student:
+  Select the "New Student" button
+  Enter valid data
+  Select "Create Student" button or "Back" to cancel
+  Fix information if rejected and try again
+  Review information, select "Edit" to make a change or "Back" to return to main
 
-Things you may want to cover:
+Viewing students:
+  Visual representation of students appears on the right column
+  Hover over a student to view their interest
+  Select "Highlight GPA < 2.5" to flag students with low GPA
+  Select "Highlight GPA > 2.5" to flag out students with high GPA
+  Select "Clear" to remove flags.
 
-* Ruby version
+Edit student:
+  Select "Edit" on the table within the row of the student to be edited
 
-* System dependencies
+Delete Student:
+  Select "Destroy" on the table within the row of the student to be deleted
+  Select "OK" on notification to continue, or "Cancel" to keep student
+  THIS IS PERMANENT
 
-* Configuration
+Show student:
+  Select "Show" on the table within the row of the student to be shown
+  Observe the information for the given student
+  Select "Back" to return to main page
 
-* Database creation
+---Features---
+REQUIRED FEATURES:
+  -Table showing all students in the database
+  -Ability to Add, Edit, Destroy and Show students
+  -View a visual representation of the students in the database with notable
+    size ratios
 
-* Database initialization
+ADDED FEATURES:
 
-* How to run the test suite
+Validation on database input:
+  -Name
+    -Must be present
+    -limited to 15 characters to prevent extremely long input
+  -Weight and Height
+    -Must be present
+    -limited to numbers only
+    -must be larger than 0
+    -must be less than or equal to 200 (to prevent extremely large boxes that
+      could potentially break the page layout)
+  -GPA
+    -Must be present
+    -limited to numbers only
+    -must be greater than 0 and less than 4.33 to match with SFU GPA ranges
+  -Color
+    -Must be present
+  -Favourite Thing
+    -Must be present
+  -Failing to meet validation requirements will prompt the user to try again
 
-* Services (job queues, cache servers, search engines, etc.)
+Hovering:
+  -Hovering over table shows colour change on rows and data
+  -Hovering over buttons shows colour change
+  -Hovering over visualized student box shows student's interest at the top of
+    the visualization column
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Styling:
+  -minimum widths set on multiple <div>s on the page to prevent page from
+    breaking or overlapping with different window size
+  -student boxes have their height/weight added onto 50px, so that a student
+    with height 1 isn't too small to see

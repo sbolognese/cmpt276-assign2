@@ -4,5 +4,5 @@ class Student < ActiveRecord::Base
   validates :height,presence:true, numericality:{:greater_than=>0, :less_than_or_equal_to => 200}
   validates :color,presence:true
   validates :fav,presence:true
-  validates :gpa,presence:true, numericality:{:greater_than=>0, :less_than_or_equal_to => 4}
+  validates :gpa,presence:true, numericality:{:greater_than=>0, :less_than_or_equal_to => 4.33}
 end

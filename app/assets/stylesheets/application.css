@@ -14,20 +14,162 @@
  *= require_self
  */
 body{
-  position:absolute;
+  margin:auto;
+  background-color:#2E2836;
+  width: 80%;
+  font-family:sans-serif;
+  color:white;
+}
+td{
+  border:1px solid white;
+  padding:0.2em;
+}
+th{
+  background-color: #A36C61;
+}
+table{
+  background-color:#BE8A60;
+  border: solid 1px white;
+  border-collapse:collapse;
+}
+a, button{
+  text-decoration:none;
+  text-shadow:0px 0px 2px #000;
+  color: white;
+  background-color: #5A1E25;
+  padding:0.2em;
+  border-radius: 5px;
+  border: solid 1px white;
+}
+a:hover, button:hover{
+  background-color: #7A3E45;
+}
+ul{
+  padding:0.5em;
+  padding-bottom:1em;
+  color:#FF0000;
+  text-shadow:0px 0px 2px #000;
+}
+ul, li{
+  list-style-type:none;
+}
+#homeTitle{
+  width:50%;
+  background-color:#6A2E35;
+  color:white;
+  border: solid 1px white;
+  box-shadow: 0px 0px 10px #000;
+  text-align:center;
+  margin:auto;
+  margin-top:1em;
 }
 #wrapper{
- width:90%
+position:absolute;
+height:100%;
+ bottom: 0;
+ min-width:900px;
+ border-right: solid 1px white;
+ border-left: solid 1px white;
+ background-color: #3E3846;
+ max-width:850px;
+}
+#all{
+  min-width:850px;
+}
+#studentDisplay{
+  width:30%;
+  float:right;
+  position:relative;
+  margin-top:1em;
+  background-color:#77495D;
+  padding:1em;
+  border: solid 1px white;
+  min-width:200px;
+  min-height:450px;
+  box-shadow: 0px 0px 10px #000;
+    min-height:400px;
+    height:50%;
 }
 #tablePortion{
   float:left;
+  width:60%;
+  background-color:#6A2E35;
+  padding:1em;
+  margin-top:1em;
+  color:white;
+  box-shadow: 0px 0px 10px #000;
+  border: solid 1px white;
+  min-height:400px;
+  padding-right:2em;
+  height:50%;
+  min-height:400px;
+}
+#homeTitle :hover{
+  color:#8D5F68;
+}
+#favInfo{
+  min-height:5em;
+  background-color:#6A2E35;
+  padding:1em;
+  padding-top:2em;
+  margin-left: -1em;
+  margin-top: -2em;
+  width:100%;
+  border-bottom: 1px white solid;
+}
+#buttons{
+  height:1em;
+  float:right;
+  margin-bottom:1em;
+  padding-bottom:1em;
+  width:100%;
+}
+#page{
+  background-color:#6A2E35;
+  padding:1em;
+  margin-top:1em;
+  color:white;
+  box-shadow: 0px 0px 10px #000;
+  border: solid 1px white;
+  min-height:400px;
+  padding-right:2em;
+}
+#newPage,#editPage,#showPage{
+  border: 1px dotted white;
+  text-align:center;
+  padding-bottom:1em;
+
+}
+.actions{
+  padding:1em;
+  text-align:center;
+}
+.field{
+  padding:0.1em;
+  text-align:center;
+}
+tr:hover{
+  background-color: #B88353;
+}
+th:hover{
+  background-color: #B3AC71;
+}
+td:hover{
+  background-color: #B89353;
+  text-decoration:underline;
+}
+h1{
+  text-align:center;
+}
+button{
+  max-width: 100px;
 }
 .studentBox{
-  float:right;
-  margin:1em;
+  margin:0.1em;
+  text-shadow:0px 0px 2px #FFF;
+  float:left;
+  background-color:#6A2E35;
 }
-.favInfo{
-  z-index:-1;
-  position:relative;
-  min-height:1em;
+.studentBox :hover{
+  background-color:#7A3E45;
 }

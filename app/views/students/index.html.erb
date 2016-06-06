@@ -1,5 +1,6 @@
 <%= render 'header'%>
-<div id=tablePortion>
+<div id="all">
+<div id="tablePortion">
 <p id="notice"><%= notice %></p>
 <h1>Listing Students</h1>
 <table>
@@ -31,10 +32,10 @@
 <br>
 
 <%= link_to 'New Student', new_student_path %>
+
 </div>
+
 <%= render 'visualStudents' %>
-<button type="button" name="lowGPA" id="lowGPA" onclick="highlightLow()">Highlight GPA < 2.5</button>
-<button type="button" name="highGPA" id="highGPA" onclick="highlightHi()">Highlight GPA > 2.5</button>
-<button type="button" name="clear" id="clear" onclick="clearMe()">Clear</button>
-<script src="studentScript.js"></script>
+
+</div>
 <%=render 'footer'%>
